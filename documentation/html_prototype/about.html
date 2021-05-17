@@ -1,0 +1,95 @@
+<!-- We should put HTML that we want to be visible on every page of our site, such as headers, footers,
+copyright notices, meta tags, and so on, in the base template. Then, any template inheriting from it will automatically
+get all that common HTML included automatically, and we will only need to override the HTML code for the block we want
+to customize. You'll see this principal of creating and overriding blocks in base templates used throughout the projects
+in this book.
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+      <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+      </script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+
+
+      <title>Vlada'sCar</title>
+      <meta charset="utf-8">
+      <meta name="author" content="Radchenko Vlada">
+      <meta name="description" content="RentalCars home page website template"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0"/>
+
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="static/css/main.css">
+
+      <script src="/static/js/javascript.js"></script>
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class='container'>
+            <a class="navbar-brand" href="/">Vlada'sCars</a>
+            <div class='collapse navbar-collapse' id='navbarCollapseLinks'>
+                <ul class="navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link" href="/login">Sign in</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/user_registration">Registration</a>
+                    </li>
+    
+                    <li class="nav-item">
+                       <a class="nav-link" href="/about">About us</a>
+                   </li>
+    
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+
+    <div class="container-fluid p-0">
+
+
+
+
+
+        <!-- {% block content %} -->
+        <div class="about">
+            <div class="yellow_content_box">
+        
+            <h1>Welcome to Rental Car</h1>
+            <div class="block block-strong" >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+           </div>
+            </div>
+        </div>
+        <!-- {% endblock %} -->
+        
+        <br>
+    </div>
+
+   <footer>
+        <nav class="navbar fixed-bottom  navbar-dark bg-dark">
+             <a class="navbar-brand" href="#"> © 2020. Vlada's Cars Corporation.</a>
+        </nav>
+    </footer>
+</body>
+</html>
+
+

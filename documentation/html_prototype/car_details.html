@@ -1,0 +1,217 @@
+
+<!-- We should put HTML that we want to be visible on every page of our site, such as headers, footers,
+copyright notices, meta tags, and so on, in the base template. Then, any template inheriting from it will automatically
+get all that common HTML included automatically, and we will only need to override the HTML code for the block we want
+to customize. You'll see this principal of creating and overriding blocks in base templates used throughout the projects
+in this book.
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+      <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+      </script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+
+
+      <title>Vlada'sCar</title>
+      <meta charset="utf-8">
+      <meta name="author" content="Radchenko Vlada">
+      <meta name="description" content="RentalCars home page website template"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0"/>
+
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="static/css/main.css">
+
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class='container'>
+            <a class="navbar-brand" href="/">Vlada'sCars</a>
+            <div class='collapse navbar-collapse' id='navbarCollapseLinks'>
+                <ul class="navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link" href="/login">Sign in</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/user_registration">Registration</a>
+                    </li>
+
+                    <li class="nav-item">
+                       <a class="nav-link" href="/about">About us</a>
+                   </li>
+    
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+<div class="container-fluid p-0">
+
+
+
+
+</br>
+
+<div class="u-s-p-t-90">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-3 m-10">
+
+                <!--====== Product Detail Picture ======-->
+                <img class="img-fluid" src="static/img/toyota.jpg" width="500px" height="500px">
+                <!--====== End - Product Detail Picture ======-->
+            </div>
+            <div class="col-xs-3 offset-1 yellow_content_box_detail">
+
+                <!--====== Product Right Side Details ======-->
+
+                    <div class="text-center">
+                    <div>
+                        <h3>Dodge Dakota Club 2007</h3>
+                    </div>
+                    <div>
+                        <div class="pd-detail__inline">
+                            <h4 class="text-primary">Price per day $108</h4>
+                        </div>
+                    <div class="u-s-m-b-15">
+                        <div class="pd-detail__rating gl-rating-style">
+
+                            <h5>Rating: 4.7 based on 3 Reviews</span></h5></div>
+                    </div>
+
+                    </br>
+                    <h4>PRODUCT INFORMATION</h4>
+
+                    <table class="center" border="2">
+                        <tr>
+                            <td>Type</td>
+                            <td>Sedan</td>
+                        </tr>
+                        <tr>
+                            <td>Seats</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>Automatic Transmission</td>
+                            <td>Yes</td>
+                        </tr>
+                        <tr>
+                            <td>Air Conditioning</td>
+                            <td>Yes</td>
+                        </tr>
+                        <tr>
+                            <td>4 Doors</td>
+                            <td>Not Printed</td>
+                        </tr>
+                    </table>
+                    </br>
+
+                    <div class="u-s-m-b-15">
+
+                        <form class="pd-detail__form">
+                            <div class="pd-detail-inline-2">
+                                <div class="u-s-m-b-15">
+                                    <button type="button" class="btn btn-success">Add to Cart</button>
+                                    <!-- <button class="btn btn--e-brand-b-2" type="submit">Add to Cart</button></div> -->
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!--====== End - Product Right Side Details ======-->
+            </div>
+        </div>
+    </div>
+</div>
+
+</br>
+
+<!--====== Product Detail Tab ======-->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 yellow_content_box_detail">
+            <!--====== Tab ======-->
+            <div class="tab-pane" id="pd-rev">
+                <div class="pd-tab__rev">
+                    <div class="u-s-m-b-30">
+                        <form class="pd-tab__rev-f1">
+                            <div class="rev-f1__group">
+                                <div class="u-s-m-b-15">
+                                    <h4>3 Reviews - 4.6 (Overall)</h4>
+                                </div>
+                            </div>
+                            <div class="rev-f1__review">
+                                <div class="review-o u-s-m-b-15">
+                                    <div class="review-o__info u-s-m-b-8">
+                                        <h6><span class="review-o__name">John Doe</span>
+
+                                        <span class="review-o__date">27 Feb 2018 10:57:43</span></h6></div>
+                                    <div class="review-o__rating gl-rating-style u-s-m-b-8">
+
+                                        <h6><span>Rate: 4</span></h6></div>
+                                    <p class="review-o__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                </div>
+                                <div class="review-o u-s-m-b-15">
+                                    <div class="review-o__info u-s-m-b-8">
+
+                                        <h6><span class="review-o__name">John Doe</span>
+
+                                        <span class="review-o__date">27 Feb 2018 10:57:43</span></h6></div>
+                                    <div class="review-o__rating gl-rating-style u-s-m-b-8">
+
+                                        <h6><span>Rate: 4</span></h6></div>
+                                    <p class="review-o__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                </div>
+                                <div class="review-o u-s-m-b-15">
+                                    <div class="review-o__info u-s-m-b-8">
+
+                                        <h6><span class="review-o__name">John Doe</span>
+
+                                        <span class="review-o__date">27 Feb 2018 10:57:43</span></h6></div>
+                                    <div class="review-o__rating gl-rating-style u-s-m-b-8">
+
+                                        <h6><span>Rate: 4</span></h6></div>
+                                    <p class="review-o__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!--====== End - Tab 2 ======-->
+        </div>
+    </div>
+</div>
+
+    <br>
+</div>
+</br>
+
+   <footer>
+        <nav class="navbar fixed-bottom  navbar-dark bg-dark">
+             <a class="navbar-brand" href="#"> © 2020. Vlada's Cars Corporation.</a>
+        </nav>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+
