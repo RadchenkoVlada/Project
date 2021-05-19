@@ -14,7 +14,8 @@ There is a website for car rental company (non-commercial)
 
 ## Technologies
 
-HTML, CSS, Python 3.8.5, framework Flask, Database MySql Ver 8.0.23-0ubuntu0.20.04.1, git, Flask-RESTful, SQLAlchemy and so on...\
+HTML, CSS, Python 3.8.5, framework Flask(Flask-2.0.0, Jinja2-3.0.0(template language), MarkupSafe-2.0.0, Werkzeug-2.0.1, click-8.0.0, 
+itsdangerous-2.0.0), Database MySql Ver 8.0.23-0ubuntu0.20.04.1, git, Flask-RESTful, SQLAlchemy and so on...\
 Supporting Programs: Sublime Text 3 - editor with a free evaluation period,
 OS - System running Ubuntu Linux,
 PyCharm - is an integrated development environment (IDE) used in computer programming, specifically for the Python language 
@@ -63,6 +64,11 @@ Before we do that, we should make sure we have the latest version of pip, the so
 ```
 $ python -m pip install --upgrade pip
 ```
+When install Flask. Within the activated environment, use the following command to install Flask:
+```
+$ pip install Flask
+```
+Flask is now installed.
 
 ## Domain Description
 
