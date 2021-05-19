@@ -23,7 +23,6 @@ PyCharm - is an integrated development environment (IDE) used in computer progra
 ## Setup
 TODO: 
 * add mysql
-* Flask
 * Sqlalchemy
 * instructions on how to build a project from the command line 
 * how to start it 
@@ -64,11 +63,16 @@ Before we do that, we should make sure we have the latest version of pip, the so
 ```
 $ python -m pip install --upgrade pip
 ```
-When install Flask. Within the activated environment, use the following command to install Flask:
+Now let's move on to the setup.py file.
+The setup script is the centre of all activity in *building, distributing, and installing modules using the Distutils*.\
+
+Flask installation. Within the activated environment, use the following command to install Flask:
 ```
 $ pip install Flask
 ```
 Flask is now installed.
+
+
 
 ## Domain Description
 
