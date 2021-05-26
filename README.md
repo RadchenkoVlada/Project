@@ -57,15 +57,21 @@ and begins tracking them in git. You do this by typing in on the command line:
 $ git clone https://github.com/RadchenkoVlada/Project.git
 ```
  
-Now that you have your virtualenv started, you can install Django.
-Before we do that, we should make sure we have the latest version of pip, the software that we use to install Django:
+Now that you have your virtualenv started.
+Now we should make sure we have the latest version of pip:
 
 ```
 $ python -m pip install --upgrade pip
 ```
 Now let's move on to the setup.py file.
-The setup script is the centre of all activity in *building, distributing, and installing modules using the Distutils*.\
+The setup script is the centre of all activity in *building, distributing, and installing modules using the Distutils*.
+This allows you to easily install Python packages. It's enough to write:
+```
+$ pip install . 
+```
+*pip* will use *setup.py* to install your module. Avoid calling *setup.py* directly.
 
+TODO: replace with requirements
 Flask installation. Within the activated environment, use the following command to install Flask:
 ```
 $ pip install Flask
