@@ -4,6 +4,7 @@ from datetime import date
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
+from flask_restful import Api
 
 
 db = SQLAlchemy()
@@ -17,17 +18,21 @@ def create_app():
     from flaskr.models import Brand
     from flaskr.models import Location
     from flaskr.models import CarType
+    from flaskr.service import CarAPI
 
     app = Flask(__name__, instance_relative_config=True)
     app.config.from_object('config.DevConfig')
     db.init_app(app)
     migrate.init_app(app, db)
+    api = Api(app)
 
     # ensure the instance folder exists
     try:
         os.makedirs(app.instance_path)
     except OSError:
         pass
+
+    api.add_resource(CarAPI, '/api/cars/', '/api/cars/<car_id>')
 
     # a simple page that says hello
     @app.route('/hello')
