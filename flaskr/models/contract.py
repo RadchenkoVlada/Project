@@ -14,4 +14,4 @@ class Contract(db.Model):
     ref_user = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=False)
 
     def __repr__(self):
-        return f"<Contract id={self.id}, name={self.name}>"
+        return f"<Contract id={self.id}, ref_car={self.ref_car}, ref_user={self.ref_user}>"
