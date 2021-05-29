@@ -78,7 +78,9 @@ $ pip install Flask
 ```
 Flask is now installed.
 
+## Environment Variables
 
+Replace the values in **.env.example** with your values and rename this file to **.env**:
 
 ## Domain Description
 
