@@ -13,6 +13,9 @@ class Config:
     STATIC_FOLDER = 'static' #TODO: check if flaskr/static or just static
     SQLALCHEMY_DATABASE_URI = environ.get("SQLALCHEMY_DATABASE_URI")
 
+    # Flask-SQLAlchemy event system is not used so turn off the flag in order to omit warning
+    SQLALCHEMY_TRACK_MODIFICATIONS = False
+
 
 class ProdConfig(Config):
     FLASK_ENV = 'production'
