@@ -27,10 +27,10 @@ def create_simple_small_test_db(db):
     car = Car(id=1, name='first_car', car_type=c1, brand=b1, location=l2, num_of_passangers=3, price_per_day=10,
               air_conditioning=True, automatic_transmission=True, doors_4=False)
 
-    u1 = User(id=1, first_name='Andrew', last_name='Smith', email='test@gmail.com', phone_number="0123456789",
-              password='test_pass')
-    u2 = User(id=2, first_name='Tom', last_name='Smith', email='test2@gmail.com', phone_number="9876543210",
-              password='test_pass2')
+    u1 = User(id=1, first_name='Andrew', last_name='Smith', email='test@gmail.com', phone_number="0123456789")
+    u1.set_password('test_pass')
+    u2 = User(id=2, first_name='Tom', last_name='Smith', email='test2@gmail.com', phone_number="9876543210")
+    u2.set_password('test_pass2')
 
     con1 = Contract(id=1, pick_up_date=date(2021, 4, 16), drop_off_date=date.today(), total_price=400, car=car,
                     user=u1)

@@ -1,0 +1,224 @@
+body {
+    margin-bottom: 32px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+.menu {
+  float: right;
+}
+/* "List - Grid View Example On Button Click using Bootstrap 4"*/
+.view-group {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.thumbnail
+{
+    margin-bottom: 30px;
+    padding: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+}
+
+.item.list-group-item
+{
+    float: none;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 30px;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 0;
+    border: 0;
+}
+.item.list-group-item .img-event {
+    float: left;
+    width: 30%;
+}
+
+.item.list-group-item .list-group-image
+{
+    margin-right: 10px;
+}
+
+.item.list-group-item .thumbnail
+{
+    margin-bottom: 0px;
+    display: inline-block;
+}
+
+.item.list-group-item .caption
+{
+    float: left;
+    width: 70%;
+    margin: 0;
+}
+
+.item.list-group-item:before, .item.list-group-item:after
+{
+    display: table;
+    content: " ";
+}
+
+.item.list-group-item:after
+{
+    clear: both;
+}
+/**/
+
+
+/*Main Content*/
+
+.container-fluid {
+    background-image: url("/static/img/hero.jpg");
+
+    background-size: cover;
+}
+
+.main_content {
+  /*padding:100px;*/
+  padding-top:50px;
+  padding-right: 0px;
+  padding-left: 0px;
+  height:1000px;
+  /*background-image: url("/static/img/hero.jpg");*/
+  /*background-size: cover;*/
+
+/*this is turn on grid layout*/
+  display: grid;
+/*each number is column size. First column 650 px,
+second column - flexible(to the end of screen)*/
+  grid-template-columns: 600px 1fr;
+/*each number is row size. The only row 650 px*/
+  grid-template-rows: 600px;
+  /*We will get grid with one row and 2 columns*/
+}
+
+.img {
+    max-width: 100%;
+    max-height: 100vh;
+}
+
+.search {
+  margin: 100px;
+  margin-right: 10px;
+  padding: 20px;
+  background-color:#FFD54F;
+  border-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+  font-size: 20px;
+  grid-column: 1 / 2;
+}
+
+.tagline {
+  margin: 10px;
+  margin-top: 100px;
+  font-size: 50px;
+  font-family: 'Muli', sans-serif;
+  background-color: alpha;
+  color: white;
+  padding: 10px;
+
+  grid-column: 2 / 3;
+}
+
+.search_button_container {
+  margin-top: 60px;
+}
+
+.search_button {
+color: #fff !important;
+text-transform: uppercase;
+text-decoration: none;
+background: green;
+padding: 20px;
+border-radius: 5px;
+border: 10px;
+transition: all 0.4s ease 0s;
+}
+
+.search_button:hover {
+background: #434343;
+letter-spacing: 1px;
+-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+transition: all 0.4s ease 0s;
+}
+
+/* form for choosing time on home.html */
+.form {
+  font-size:25px;
+  margin:25px;
+}
+
+.about {
+    padding-top: 50px;
+    padding-bottom: 300px;
+}
+
+
+/*Search page*/
+.search_page {
+  /*height: 2000px;*/
+}
+
+.registration {
+  height: auto;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 400px;
+}
+
+.yellow_content_box {
+  width: 60%;
+  height: 50%;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom: 15px;
+
+  position: static;
+  margin: auto;
+
+  background-color:#FFD54F;
+  border-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  height: auto;
+
+  font-size: 20px;
+}
+
+.my_popup {
+  width: 160px;
+  background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px;
+    position: fixed;
+    z-index: 1;
+    top: 10%;
+    left: 80%;
+}
+
+/*this class has created for */
+.indent_bottom {
+    margin-bottom: 20px;
+}

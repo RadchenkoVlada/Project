@@ -1,0 +1,52 @@
+<!-- We should put HTML that we want to be visible on every page of our site, such as headers, footers,
+copyright notices, meta tags, and so on, in the base template. Then, any template inheriting from it will automatically
+get all that common HTML included automatically, and we will only need to override the HTML code for the block we want
+to customize. You'll see this principal of creating and overriding blocks in base templates used throughout the projects
+in this book.
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+      </script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+
+      <title>Vlada'sCar</title>
+      <meta charset="utf-8">
+      <meta name="author" content="Radchenko Vlada">
+      <meta name="description" content="RentalCars home page website"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0"/>
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="/static/css/main.css">
+
+      <script src="/static/js/javascript.js"></script>
+
+  </head>
+
+  <body>
+
+    {% include "includes/navbar.html"%}
+    {% include "includes/messages.html"%}
+
+    <div class="container-fluid p-0">
+        {% block content %}
+        {% endblock %}
+        <br>
+    </div>
+
+   <footer>
+        <nav class="navbar fixed-bottom  navbar-dark bg-dark">
+             <a class="navbar-brand" href="#"> © 2021. Vlada's Cars Corporation.</a>
+        </nav>
+    </footer>
+</body>
+</html>

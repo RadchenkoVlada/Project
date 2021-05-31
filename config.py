@@ -9,7 +9,6 @@ load_dotenv(path.join(basedir, ".env"))
 class Config:
     """Base config."""
     SECRET_KEY = environ.get('SECRET_KEY')
-    SESSION_COOKIE_NAME = environ.get('SESSION_COOKIE_NAME')
     STATIC_FOLDER = 'static' #TODO: check if flaskr/static or just static
     SQLALCHEMY_DATABASE_URI = environ.get("SQLALCHEMY_DATABASE_URI")
 
