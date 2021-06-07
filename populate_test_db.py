@@ -1,5 +1,8 @@
-import flaskr
+import csv
+import os
 from datetime import date
+
+import flaskr
 from flaskr.models import *
 
 
@@ -13,6 +16,34 @@ def delete_all_data_from_db(db):
     Location.query.delete()
     CarType.query.delete()
 
+    db.session.commit()
+
+
+def create_test_db_from_file(db, filename):
+    current_car_id = 1
+    current_brand_id = 1
+    current_location_id = 1
+    current_car_type_id = 1
+    with open(filename, "r") as in_file:
+        data = csv.reader(in_file, delimiter='\t')
+        next(data)  # skip header line
+        for line in data:
+            def get_or_create(data_from_file, current_id, model):
+                instance = model.query.filter_by(name=data_from_file).one_or_none()
+                if instance is None:
+                    instance = model(id=current_id, name=data_from_file)
+                    db.session.add(instance)
+                    current_id += 1
+                return current_id, instance
+
+            current_car_type_id, car_type = get_or_create(line[2], current_car_type_id, CarType)
+            current_location_id, location = get_or_create(line[3], current_location_id, Location)
+            current_brand_id, brand = get_or_create(line[4], current_brand_id, Brand)
+
+            car = Car(id=current_car_id, name=line[1], car_type=car_type, brand=brand, location=location, num_of_passangers=int(line[5]), price_per_day=int(line[6]),
+                      air_conditioning=int(line[7]), automatic_transmission=int(line[8]), doors_4=int(line[10]))
+            current_car_id += 1
+            db.session.add(car)
     db.session.commit()
 
 
@@ -53,5 +84,8 @@ if __name__ == '__main__':
     app.app_context().push()
 
     delete_all_data_from_db(flaskr.db)
-    create_simple_small_test_db(flaskr.db)
+
+    create_test_db_from_file(flaskr.db, os.path.join(os.path.dirname(os.path.realpath(__file__)), "data_table.csv"))
+
+    # create_simple_small_test_db(flaskr.db)
     print('Done')
