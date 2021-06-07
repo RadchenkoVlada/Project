@@ -13,11 +13,14 @@ if os.path.exists(env_path):
 class Config:
     """Base config."""
     SECRET_KEY = environ.get('SECRET_KEY')
+    # Flask-SQLAlchemy
     SQLALCHEMY_DATABASE_URI = environ.get("SQLALCHEMY_DATABASE_URI")
-    STATIC_FOLDER = 'static'
-
     # Flask-SQLAlchemy event system is not used so turn off the flag in order to omit warning
     SQLALCHEMY_TRACK_MODIFICATIONS = False
+
+    # Static Assets
+    STATIC_FOLDER = 'static'
+    TEMPLATES_FOLDER = 'templates'
 
 
 class ProdConfig(Config):
