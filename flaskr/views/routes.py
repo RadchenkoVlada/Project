@@ -2,7 +2,7 @@ from flask import current_app as app
 from flask import render_template, redirect, url_for, request, flash
 from flaskr.models import User
 from flaskr.forms import LoginForm
-from flask_login import current_user, login_user
+from flask_login import current_user, login_user, logout_user, login_required
 
 
 @app.route('/home/')
@@ -13,7 +13,7 @@ def home():
 
 @app.route('/about/')
 def about():
-    return render_template('about.html')
+    return render_template('about.html', title="About")
 
 
 @app.route('/login/', methods=['GET', 'POST'])
@@ -41,3 +41,12 @@ def login():
         return redirect(url_for('login'))
 
     return render_template('login.html', form=form)
+
+
+@app.route('/logout/', methods=['GET', 'POST'])
+@login_required
+def logout():
+    """User log-out logic."""
+    logout_user()
+    return redirect(url_for('home'))
+
