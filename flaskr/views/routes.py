@@ -1,14 +1,49 @@
 from flask import current_app as app
 from flask import render_template, redirect, url_for, request, flash
-from flaskr.models import User
-from flaskr.forms import LoginForm
+from flaskr.models import User, Location, Car
+from flaskr.forms import LoginForm, SearchForm
 from flask_login import current_user, login_user, logout_user, login_required
 
 
-@app.route('/home/')
-@app.route('/')
+@app.route('/search/loc/<int:location_id>/', methods=['GET'])
+@app.route('/search/loc/<int:location_id>/page/', methods=['GET'])
+@app.route('/search/loc/<int:location_id>/page/<int:page>', methods=['GET'])
+def search(location_id, page=1):
+    CARS_PER_PAGE = 10
+
+    # page = request.args.get(get_page_parameter(), type=int, default=1)
+    pagination = Car.query.filter_by(ref_location=location_id).paginate(page, CARS_PER_PAGE, False)
+    # pagination = Pagination(page=page, total=cars.count(), search=True, record_name='users')
+
+    return render_template('search_page/search.html',
+                           cars=pagination.items,
+                           pagination=pagination,
+                           location_id=location_id)
+
+
+
+@app.route('/home/', methods=['GET', 'POST'])
+@app.route('/', methods=['GET', 'POST'])
 def home():
-    return render_template('home.html')
+    print(request.method)
+    form = SearchForm()
+    form.location.choices = [(str(l.id), l.name) for l in Location.query.all()]
+
+    if form.validate_on_submit():
+        if form.drop_off_date.data < form.pick_up_date.data:
+            flash('Drop-Off date should be after Pick up', 'error')
+            return redirect(url_for('home'))
+
+        location = Location.query.get(int(form.location.data))
+        if location:
+            return redirect(url_for('search', location_id=location.id)) # TODO: add dates to url
+        flash('Location not found', 'error')
+        return redirect(url_for('home'))
+
+    for field, errors in form.errors.items():
+        flash(form[field].label.text + ": " + ", ".join(errors), 'error')
+
+    return render_template('home.html', form=form)
 
 
 @app.route('/about/')

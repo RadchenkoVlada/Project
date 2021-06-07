@@ -1,88 +1,32 @@
 {% extends 'header_footer.html' %}
 {% block content %}
-    <div class="main_content">
-      <div class="search">
-        <!--   If you click "Submit", the form-data will be sent to a page called "/handler.php".
-        TODO: revise button implementation and rework according to WTForms-->
-        <form name="SearchResultsForm" method="get"  action="handler.php">
-          <p style="margin:5px">Search for a car</p>
-          <div style="margin:10px">
-            <input style="font-size:20px;" name="pick_up_location" maxlength="30" size="40" placeholder="Type a city or an airport name">
-          </div>
+
+<div class="main_content">
+    <div class="search">
+        <form method="post" action="">
+            {{ form.csrf_token }}
+
+            <p style="margin:5px">Search for a car</p>
+            <div style="margin:10px">
+
+                {{ form.location }}
+            </div>
+            <div>
+                Pick up Date (date and time):
+                {{ form.pick_up_date }}
+
+                Drop-Off Date (date and time):
+                {{ form.drop_off_date }}
+
+            </div>
+            <div class="search_button_container" align="center">
+                {{ form.submit(class_="search_button") }}
+            </div>
         </form>
-        <div>
-          <form action="/action_page.php">
-            Pick up Date (date and time):
-            <div name="date_time">
-              <input type="date" name="day">
-              <select  name="twelveHrPuTime">
-                <!-- TODO: implement JS loop -->
-                <option value="7:00 AM">7:00 AM</option>
-                <option value="8:00 AM">8:00 AM</option>
-                <option value="9:00 AM">9:00 AM</option>
-                <option value="10:00 AM" selected="selected">10:00 AM</option>
-                <option value="11:00 AM">11:00 AM</option>
-                <option value="12:00 PM">12:00 PM</option>
-                <option value="1:00 PM">1:00 PM</option>
-                <option value="2:00 PM">2:00 PM</option>
-                <option value="3:00 PM">3:00 PM</option>
-                <option value="4:00 PM">4:00 PM</option>
-                <option value="5:00 PM">5:00 PM</option>
-                <option value="6:00 PM">6:00 PM</option>
-                <option value="7:00 PM">7:00 PM</option>
-                <option value="8:00 PM">8:00 PM</option>
-                <option value="9:00 PM">9:00 PM</option>
-                <option value="10:00 PM">10:00 PM</option>
-                <option value="11:00 PM">11:00 PM</option>
-                <option value="12:00 AM">12:00 AM</option>
-                <option value="1:00 AM">1:00 AM</option>
-                <option value="2:00 AM">2:00 AM</option>
-                <option value="3:00 AM">3:00 AM</option>
-                <option value="4:00 AM">4:00 AM</option>
-                <option value="5:00 AM">5:00 AM</option>
-                <option value="6:00 AM">6:00 AM</option>
-              </select>
-            </div>
-            Drop-Off Date (date and time):
-            <div name="date_time">
-              <input type="date" id="localdate" name="date">
-              
-              <select  name="twelveHrPuTime">
-                <option value="7:00 AM">7:00 AM</option>
-                <option value="8:00 AM">8:00 AM</option>
-                <option value="9:00 AM">9:00 AM</option>
-                <option value="10:00 AM" selected="selected">10:00 AM</option>
-                <option value="11:00 AM">11:00 AM</option>
-                <option value="12:00 PM">12:00 PM</option>
-                <option value="1:00 PM">1:00 PM</option>
-                <option value="2:00 PM">2:00 PM</option>
-                <option value="3:00 PM">3:00 PM</option>
-                <option value="4:00 PM">4:00 PM</option>
-                <option value="5:00 PM">5:00 PM</option>
-                <option value="6:00 PM">6:00 PM</option>
-                <option value="7:00 PM">7:00 PM</option>
-                <option value="8:00 PM">8:00 PM</option>
-                <option value="9:00 PM">9:00 PM</option>
-                <option value="10:00 PM">10:00 PM</option>
-                <option value="11:00 PM">11:00 PM</option>
-                <option value="12:00 AM">12:00 AM</option>
-                <option value="1:00 AM">1:00 AM</option>
-                <option value="2:00 AM">2:00 AM</option>
-                <option value="3:00 AM">3:00 AM</option>
-                <option value="4:00 AM">4:00 AM</option>
-                <option value="5:00 AM">5:00 AM</option>
-                <option value="6:00 AM">6:00 AM</option>
-              </select>
-            </div>
-          </form>
-        </div>
-        <div class="search_button_container" align="center">
-          <a class="search_button" href="/search" target="_blank" rel="nofollow noopener"> Search </a>
-        </div>
-      </div>
-      <div class="tagline">
-        Maximum of possibilities. Maximum freedom.
-      </div>      
     </div>
+    <div class="tagline">
+        Maximum of possibilities. Maximum freedom.
+    </div>
+</div>
 
 {% endblock %}

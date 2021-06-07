@@ -3,7 +3,7 @@
 00003.jpg	Dodge Dakota Club 2007	SUV	Kyiv	Dodge	5	108	1	1	0	1
 00004.jpg	Hyundai Sonata Hybrid 2012	Sedan	Dnipro	Hyundai	4	68	1	0	1	1
 00006.jpg	Geo Metro 1993	Convertible	Odesa	Geo	4	201	0	0	1	1
-00007.jpg	Dodge Journey 2012	SUV	Vinnytsia	Dodge	5	164	1	0	0	1
+00007.jpg	Dodge Journey 2012	SUV	Kyiv	Dodge	5	164	1	0	0	1
 00008.jpg	Dodge Charger 2012	Sedan	Zaporizhzhia	Dodge	4	153	0	1	0	1
 00009.jpg	Mitsubishi Lancer 2012	Sedan	Lviv	Mitsubishi	4	154	0	1	0	1
 00010.jpg	Chevrolet Traverse 2012	SUV	Kryvyi Rih	Chevrolet	5	192	1	0	1	1
@@ -15,7 +15,7 @@
 00021.jpg	Chrysler 300 SRT-8 2010	Sedan	Kyiv	Chrysler	4	206	1	1	0	1
 00022.jpg	BMW M6 2010	Convertible	Dnipro	BMW	4	157	1	0	1	1
 00024.jpg	Nissan Juke 2012	Hatchback	Odesa	Nissan	4	84	1	0	1	1
-00025.jpg	Volvo 240 1993	Sedan	Vinnytsia	Volvo	4	158	1	0	0	1
+00025.jpg	Volvo 240 1993	Sedan	Kyiv	Volvo	4	158	1	0	0	1
 00027.jpg	Suzuki SX4 2012	Sedan	Zaporizhzhia	Suzuki	4	191	1	0	1	1
 00028.jpg	Dodge Ram Pickup 3500 2010	Crew Cab	Lviv	Dodge	5	184	0	1	1	1
 00029.jpg	Spyker C8 2009	Coupe	Kryvyi Rih	Spyker	2	66	0	1	0	0
@@ -27,7 +27,7 @@
 00040.jpg	Infiniti QX56 2011	SUV	Kyiv	Infiniti	5	120	1	0	0	1
 00041.jpg	Audi A5 2012	Coupe	Dnipro	Audi	2	173	1	1	0	0
 00042.jpg	Volkswagen Golf 1991	Hatchback	Odesa	Volkswagen	4	180	0	0	0	1
-00043.jpg	GMC Savana 2012	Van	Vinnytsia	GMC	10	47	1	1	1	1
+00043.jpg	GMC Savana 2012	Van	Kyiv	GMC	10	47	1	1	1	1
 00046.jpg	Audi TT RS 2012	Coupe	Zaporizhzhia	Audi	2	46	1	0	1	0
 00048.jpg	RollsRoyce Phantom 2012	Sedan	Lviv	Rolls-Royce	4	78	1	1	0	1
 00049.jpg	Porsche Panamera 2012	Sedan	Kryvyi Rih	Porsche	4	160	0	0	1	1
@@ -39,7 +39,7 @@
 00061.jpg	Ford F-150 Regular 2007	Regular Cab	Kyiv	Ford	5	113	0	0	1	1
 00063.jpg	Ferrari FF 2012	Coupe	Dnipro	Ferrari	2	116	1	0	1	0
 00064.jpg	Toyota Camry 2012	Sedan	Odesa	Toyota	4	164	1	0	1	1
-00067.jpg	Ford Ranger SuperCab 2011	Regular Cab	Vinnytsia	Ford	5	37	0	0	0	1
+00067.jpg	Ford Ranger SuperCab 2011	Regular Cab	Kyiv	Ford	5	37	0	0	0	1
 00068.jpg	GMC Canyon Extended 2012	Regular Cab	Zaporizhzhia	GMC	5	138	1	0	0	1
 00069.jpg	Acura TSX 2012	Sedan	Lviv	Acura	4	153	1	0	0	1
 00070.jpg	BMW 3 Series 2012	Sedan	Kryvyi Rih	BMW	4	105	1	1	0	1
@@ -51,7 +51,7 @@
 00089.jpg	Audi S6 2011	Sedan	Kyiv	Audi	4	72	1	1	1	1
 00091.jpg	Mercedes-Benz S-Class 2012	Sedan	Dnipro	Mercedes-Benz	4	76	0	0	0	1
 00094.jpg	Ford GT 2006	Coupe	Odesa	Ford	2	113	1	1	0	0
-00098.jpg	Cadillac CTS-V 2012	Sedan	Vinnytsia	Cadillac	4	100	1	0	0	1
+00098.jpg	Cadillac CTS-V 2012	Sedan	Kyiv	Cadillac	4	100	1	0	0	1
 00103.jpg	Chevrolet Impala 2007	Sedan	Zaporizhzhia	Chevrolet	4	101	0	1	0	1
 00114.jpg	Chevrolet Express 2007	Van	Lviv	Chevrolet	10	118	1	0	0	1
 00119.jpg	Jeep Liberty 2012	SUV	Kryvyi Rih	Jeep	5	112	0	1	1	1
@@ -63,7 +63,7 @@
 00142.jpg	Chevrolet HHR SS 2010	Wagon	Kyiv	Chevrolet	8	66	1	1	0	1
 00143.jpg	Land Rover LR2 2012	SUV	Dnipro	Land	5	59	1	1	1	1
 00145.jpg	Hyundai Azera 2012	Sedan	Odesa	Hyundai	4	88	1	1	1	1
-00147.jpg	Chrysler Aspen 2009	SUV	Vinnytsia	Chrysler	5	158	1	0	0	1
+00147.jpg	Chrysler Aspen 2009	SUV	Kyiv	Chrysler	5	158	1	0	0	1
 00150.jpg	Aston Martin V8 Vantage 2012	Convertible	Zaporizhzhia	Aston	4	95	1	1	0	1
 00153.jpg	BMW 3 Series 2012	Wagon	Lviv	BMW	8	122	0	1	1	1
 00155.jpg	Jeep Compass 2012	SUV	Kryvyi Rih	Jeep	5	41	0	0	1	1
@@ -75,7 +75,7 @@
 00163.jpg	AM General Hummer 2000	SUV	Kyiv	AM	5	121	1	0	0	1
 00168.jpg	Bentley Arnage 2009	Sedan	Dnipro	Bentley	4	192	1	0	0	1
 00177.jpg	Buick Enclave 2012	SUV	Odesa	Buick	5	111	1	0	1	1
-00181.jpg	Chevrolet TrailBlazer 2009	SUV	Vinnytsia	Chevrolet	5	167	0	1	0	1
+00181.jpg	Chevrolet TrailBlazer 2009	SUV	Kyiv	Chevrolet	5	167	0	1	0	1
 00184.jpg	Mercedes-Benz 300-Class 1993	Convertible	Zaporizhzhia	Mercedes-Benz	4	63	0	0	1	1
 00187.jpg	McLaren MP4-12C 2012	Coupe	Lviv	McLaren	2	69	1	1	1	0
 00188.jpg	Dodge Challenger SRT8 2011	Coupe	Kryvyi Rih	Dodge	2	118	0	0	0	0
@@ -87,7 +87,7 @@
 00203.jpg	Toyota Corolla 2012	Sedan	Kyiv	Toyota	4	160	1	1	1	1
 00205.jpg	Audi S4 2012	Sedan	Dnipro	Audi	4	204	0	0	0	1
 00206.jpg	Aston Martin Virage 2012	Coupe	Odesa	Aston	2	100	0	0	1	0
-00209.jpg	Chevrolet Sonic 2012	Sedan	Vinnytsia	Chevrolet	4	209	0	1	1	1
+00209.jpg	Chevrolet Sonic 2012	Sedan	Kyiv	Chevrolet	4	209	0	1	1	1
 00217.jpg	Audi 100 1994	Wagon	Zaporizhzhia	Audi	8	144	0	1	0	1
 00222.jpg	smart fortwo 2012	Convertible	Lviv	smart	4	109	0	0	1	1
 00228.jpg	Infiniti G IPL 2012	Coupe	Kryvyi Rih	Infiniti	2	158	1	1	1	0
@@ -99,7 +99,7 @@
 00247.jpg	Hyundai Genesis 2012	Sedan	Kyiv	Hyundai	4	75	0	1	0	1
 00249.jpg	Lamborghini Diablo 2001	Coupe	Dnipro	Lamborghini	2	145	1	1	1	0
 00256.jpg	Audi S5 2012	Convertible	Odesa	Audi	4	199	0	1	1	1
-00257.jpg	BMW 6 Series 2007	Convertible	Vinnytsia	BMW	4	70	1	1	1	1
+00257.jpg	BMW 6 Series 2007	Convertible	Kyiv	BMW	4	70	1	1	1	1
 00266.jpg	Audi 100 1994	Sedan	Zaporizhzhia	Audi	4	160	1	1	1	1
 00267.jpg	Bugatti Veyron 16.4 2009	Coupe	Lviv	Bugatti	2	126	0	0	1	0
 00268.jpg	Chevrolet Silverado 1500 2012	Regular Cab	Kryvyi Rih	Chevrolet	5	93	0	0	0	1
@@ -109,7 +109,7 @@
 00292.jpg	Aston Martin Virage 2012	Convertible	Poltava	Aston	4	139	0	0	0	1
 00293.jpg	Ferrari 458 Italia 2012	Coupe	Kharkiv	Ferrari	2	109	0	0	1	0
 00296.jpg	GMC Yukon Hybrid 2012	SUV	Kyiv	GMC	5	200	1	0	0	1
-00297.jpg	Dodge Ram Pickup 3500 2009	Regular Cab	Dnipro	Dodge	5	190	0	0	0	1
+00297.jpg	Dodge Ram Pickup 3500 2009	Regular Cab	Kyiv	Dodge	5	190	0	0	0	1
 00300.jpg	Nissan NV Passenger 2012	Van	Odesa	Nissan	10	187	0	1	0	1
 00306.jpg	Dodge Caliber 2012	Wagon	Vinnytsia	Dodge	8	80	0	0	1	1
 00309.jpg	Honda Odyssey 2007	Minivan	Zaporizhzhia	Honda	10	56	1	1	1	1
@@ -121,7 +121,7 @@
 00340.jpg	Aston Martin V8 Vantage 2012	Coupe	Poltava	Aston	2	66	1	1	0	0
 00341.jpg	Chevrolet Malibu Hybrid 2010	Sedan	Kharkiv	Chevrolet	4	209	0	0	1	1
 00356.jpg	Ford Focus 2007	Sedan	Kyiv	Ford	4	79	0	0	1	1
-00365.jpg	Cadillac Escalade EXT 2007	Crew Cab	Dnipro	Cadillac	5	118	0	0	1	1
+00365.jpg	Cadillac Escalade EXT 2007	Crew Cab	Kyiv	Cadillac	5	118	0	0	1	1
 00369.jpg	Honda Accord 2012	Coupe	Odesa	Honda	2	90	1	1	0	0
 00376.jpg	Hyundai Elantra 2007	Sedan	Vinnytsia	Hyundai	4	80	0	1	0	1
 00379.jpg	Chevrolet Silverado 1500 Hybrid 2012	Crew Cab	Zaporizhzhia	Chevrolet	5	177	0	0	1	1
@@ -133,7 +133,7 @@
 00415.jpg	Chevrolet Corvette 2012	Convertible	Poltava	Chevrolet	4	174	0	1	0	1
 00427.jpg	Ford Fiesta 2012	Sedan	Kharkiv	Ford	4	143	0	1	0	1
 00433.jpg	Mercedes-Benz E-Class 2012	Sedan	Kyiv	Mercedes-Benz	4	198	1	1	0	1
-00435.jpg	Chevrolet Express Cargo 2007	Van	Dnipro	Chevrolet	10	123	0	0	1	1
+00435.jpg	Chevrolet Express Cargo 2007	Van	Kyiv	Chevrolet	10	123	0	0	1	1
 00457.jpg	GMC Terrain 2012	SUV	Odesa	GMC	5	102	1	1	1	1
 00474.jpg	Honda Accord 2012	Sedan	Vinnytsia	Honda	4	146	0	0	0	1
 00477.jpg	HUMMER H3T Crew 2010	Crew Cab	Zaporizhzhia	HUMMER	5	147	0	0	1	1
@@ -145,7 +145,7 @@
 00559.jpg	Mercedes-Benz C-Class 2012	Sedan	Poltava	Mercedes-Benz	4	129	0	0	1	1
 00564.jpg	Chevrolet Monte Carlo 2007	Coupe	Kharkiv	Chevrolet	2	109	1	0	0	0
 00574.jpg	Daewoo Nubira 2002	Wagon	Kyiv	Daewoo	8	194	1	1	0	1
-00575.jpg	GMC Acadia 2012	SUV	Dnipro	GMC	5	105	1	1	1	1
+00575.jpg	GMC Acadia 2012	SUV	Kyiv	GMC	5	105	1	1	1	1
 00578.jpg	Audi RS 4 2008	Convertible	Odesa	Audi	4	72	1	0	0	1
 00589.jpg	Bentley Mulsanne 2011	Sedan	Vinnytsia	Bentley	4	87	1	0	0	1
 00592.jpg	BMW M3 2012	Coupe	Zaporizhzhia	BMW	2	68	1	1	1	0
@@ -163,7 +163,7 @@
 00723.jpg	Audi TT 2011	Hatchback	Zaporizhzhia	Audi	4	51	0	1	1	1
 00730.jpg	Mazda Tribute 2011	SUV	Lviv	Mazda	5	166	1	0	1	1
 00754.jpg	Dodge Durango 2007	SUV	Kryvyi Rih	Dodge	5	166	1	1	0	1
-00781.jpg	Dodge Sprinter Cargo 2009	Van	Mykolaiv	Dodge	10	170	1	1	0	1
+00781.jpg	Dodge Sprinter Cargo 2009	Van	Kyiv	Dodge	10	170	1	1	0	1
 00784.jpg	Ferrari 458 Italia 2012	Convertible	Mariupol	Ferrari	4	52	1	1	1	1
 00790.jpg	Hyundai Santa Fe 2012	SUV	Kherson	Hyundai	5	73	1	1	1	1
 00806.jpg	Dodge Magnum 2008	Wagon	Poltava	Dodge	8	37	1	1	1	1
@@ -175,7 +175,7 @@
 00942.jpg	Chevrolet Tahoe Hybrid 2012	SUV	Zaporizhzhia	Chevrolet	5	196	0	0	1	1
 00959.jpg	Lamborghini Aventador 2012	Coupe	Lviv	Lamborghini	2	94	1	0	0	0
 00977.jpg	BMW X6 2012	SUV	Kryvyi Rih	BMW	5	137	1	0	1	1
-01014.jpg	FIAT 500 2012	Convertible	Mykolaiv	FIAT	4	68	1	1	0	1
+01014.jpg	FIAT 500 2012	Convertible	Kyiv	FIAT	4	68	1	1	0	1
 01076.jpg	Bentley Continental Supersports 2012	Convertible	Mariupol	Bentley	4	122	1	1	0	1
 01175.jpg	Ford F-150 2012	Regular Cab	Kherson	Ford	5	180	1	0	0	1
 01206.jpg	BMW 1 Series 2012	Coupe	Poltava	BMW	2	104	0	1	1	0
@@ -187,4 +187,4 @@
 01451.jpg	Maybach Landaulet 2012	Convertible	Zaporizhzhia	Maybach	4	196	0	0	0	1
 01471.jpg	Chevrolet Avalanche 2012	Crew Cab	Lviv	Chevrolet	5	118	0	1	1	1
 01582.jpg	BMW M5 2010	Sedan	Kryvyi Rih	BMW	4	55	0	0	0	1
-01931.jpg	Hyundai Accent 2012	Sedan	Mykolaiv	Hyundai	4	150	0	1	0	1
+01931.jpg	Hyundai Accent 2012	Sedan	Kyiv	Hyundai	4	150	0	1	0	1

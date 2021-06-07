@@ -1,0 +1,39 @@
+{% extends "header_footer.html" %}
+
+{% block content %}
+    <div class="search_page p-0" style="background-image: url(/static/img/blur_hero.jpg)">
+        <div class="row h-100 m-0">
+            {# Pick Up & Return Bar#}
+            <div class="col-12" style="height: 100px">
+                Pick Up & Return
+            </div>
+            {# Filters #}
+            <div class="col-3 h-100">
+                <div class="font-weight-bold text-monospace">
+                    &nbsp Filter by &nbsp
+                    {% include "search_page/search_filter_by.html" %}
+                </div>
+            </div>
+
+            <div class="col h-100 m-0">
+                {# Sort by Bar #}
+                <div class="row" style="height: 50px; vertical-align: middle;">
+                    <div class="justify-content-center align-self-center font-weight-bold text-monospace"> &nbsp Sort
+                        by: &nbsp
+                    </div>
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-primary">Most Popular</button>
+                        <button type="button" class="btn btn-primary">Low to high</button>
+                        <button type="button" class="btn btn-primary">High to low</button>
+                    </div>
+                </div>
+
+                {# Main content - list of cars #}
+                <div class="row h-100 p-15">
+                    {% include "search_page/search_main_content_list.html" %}
+                </div>
+
+            </div>
+        </div>
+    </div>
+{% endblock %}
