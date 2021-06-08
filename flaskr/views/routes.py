@@ -32,6 +32,8 @@ def home():
     form.location.choices = [(str(l.id), l.name) for l in Location.query.all()]
 
     if form.validate_on_submit():
+        # TODO: Add addtional check. pick_up_date can't be before today
+
         if form.drop_off_date.data < form.pick_up_date.data:
             flash('Drop-Off date should be after Pick up', 'error')
             return redirect(url_for('home'))
