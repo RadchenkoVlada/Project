@@ -23,7 +23,7 @@ class RegistrationForm(FlaskForm):
         'Phone',
         validators=[
             DataRequired(),
-            Length(max=200)
+            Length(max=15)
         ]
     )
     email = StringField(
@@ -34,7 +34,7 @@ class RegistrationForm(FlaskForm):
             Email(message='Enter a valid email.')
         ]
     )
-    password = PasswordField('Password', validators=[DataRequired()])
+    password = PasswordField('Password', validators=[DataRequired(), Length(min=8, message='PASSWORD_INVALID_LENGTH')])
     confirm_password = PasswordField('Confirm Password', validators=[DataRequired(), EqualTo('password')])
 
     submit = SubmitField('Create an Account')

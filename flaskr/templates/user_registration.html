@@ -11,11 +11,17 @@
             <p> Email: {{ form.email }}
             <p> First name: {{ form.first_name }}
             <p> Last name: {{ form.last_name }}
+            <p> Your password must contain 15 characters!
             <p> Phone number: {{ form.phone_number }}
-            <p> Password {{ form.password }}
-            <p> Confirm password {{ form.confirm_password }}
+            <p> Your password can't be too similiar to your other personal information.
+            <p> Your password must contain at least 8 characters!
+            <p> Password: {{ form.password }}
+            <p> Confirm password: {{ form.confirm_password }}
             <p>
-            {{ form.submit(class_="search_button") }}
+
+            <div class="search_button_container" align="center">
+                {{ form.submit(class_="search_button") }}
+            </div>
 
 		</form>
 		<p>
