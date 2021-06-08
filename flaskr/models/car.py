@@ -6,6 +6,7 @@ class Car(db.Model):
 
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(80), unique=False, nullable=False)
+    photo_filename = db.Column(db.String(20))
 
     ref_car_type = db.Column(db.Integer, db.ForeignKey('car_types.id'), nullable=False)
     car_type = db.relationship("CarType")
@@ -26,3 +27,6 @@ class Car(db.Model):
 
     def __repr__(self):
         return f"<Car id={self.id}, name={self.name}>"
+
+    def get_photo_path(self):
+        return "/static/img/cars/" + self.photo_filename

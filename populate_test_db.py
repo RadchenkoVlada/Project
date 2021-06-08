@@ -41,7 +41,7 @@ def create_test_db_from_file(db, filename):
             current_brand_id, brand = get_or_create(line[4], current_brand_id, Brand)
 
             car = Car(id=current_car_id, name=line[1], car_type=car_type, brand=brand, location=location, num_of_passangers=int(line[5]), price_per_day=int(line[6]),
-                      air_conditioning=int(line[7]), automatic_transmission=int(line[8]), doors_4=int(line[10]))
+                      air_conditioning=int(line[7]), automatic_transmission=int(line[8]), doors_4=int(line[10]), photo_filename=line[0])
             current_car_id += 1
             db.session.add(car)
     db.session.commit()
