@@ -1,7 +1,9 @@
 from flask import current_app as app
+from flaskr import db
 from flask import render_template, redirect, url_for, request, flash
+
 from flaskr.models import User, Location, Car
-from flaskr.forms import LoginForm, SearchForm
+from flaskr.forms import LoginForm, RegistrationForm, SearchForm
 from flask_login import current_user, login_user, logout_user, login_required
 
 
@@ -75,7 +77,7 @@ def login():
         flash('Invalid username/password combination', 'error')
         return redirect(url_for('login'))
 
-    return render_template('login.html', form=form)
+    return render_template('login.html', title='Login', form=form)
 
 
 @app.route('/logout/', methods=['GET', 'POST'])
@@ -85,3 +87,33 @@ def logout():
     logout_user()
     return redirect(url_for('home'))
 
+
+@app.route('/user_registration/', methods=['GET', 'POST'])
+def registration():
+    """User register logic."""
+    form = RegistrationForm()
+
+    if form.validate_on_submit():
+        existing_user_by_email = User.query.filter_by(email=form.email.data).first()
+        existing_user_by_phone = User.query.filter_by(phone_number=form.phone_number.data).first()
+        if existing_user_by_email is not None or existing_user_by_phone is not None:
+            flash('A user already exists with that email address or phone number.', 'error')
+        else:
+            user = User(
+                first_name=form.first_name.data,
+                last_name=form.last_name.data,
+                phone_number=form.phone_number.data,
+                email=form.email.data,
+            )
+            user.set_password(form.password.data)
+            db.session.add(user)
+            db.session.commit()  # Create new user
+            login_user(user)  # Log in as newly created user
+            flash('Registration Successful. Thank you for registering.', 'info')
+
+            return redirect(url_for('home'))
+
+    for field, errors in form.errors.items():
+        flash(form[field].label.text + ": " + ", ".join(errors), 'error')
+
+    return render_template('user_registration.html', title='Register', form=form)
