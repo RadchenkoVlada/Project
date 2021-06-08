@@ -111,7 +111,7 @@ def registration():
             db.session.add(user)
             db.session.commit()  # Create new user
             login_user(user)  # Log in as newly created user
-            flash('Registration Successful. Thank you for registering.', 'info')
+            flash(f'Registration Successful. Thank you {form.first_name.data} for registering.', 'success')
 
             return redirect(url_for('home'))
 
