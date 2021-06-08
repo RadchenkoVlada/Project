@@ -1,0 +1,26 @@
+{% extends "header_footer.html" %}
+
+{% block content %}
+ <div class="registration">
+	<div class="yellow_content_box">
+		<form method="post" action="">
+		<!-- Cross Site Request Forgery protection -->
+            {{ form.csrf_token }}
+
+			<h1>Registration Form</h1>
+            <p> Email: {{ form.email }}
+            <p> First name: {{ form.first_name }}
+            <p> Last name: {{ form.last_name }}
+            <p> Phone number: {{ form.phone_number }}
+            <p> Password {{ form.password }}
+            <p> Confirm password {{ form.confirm_password }}
+            <p>
+            {{ form.submit(class_="search_button") }}
+
+		</form>
+		<p>
+		If you already have an account, <a href="/login"><strong> Sign in </strong></a> instead.
+		</p>
+	</div>
+</div>
+{% endblock %}
