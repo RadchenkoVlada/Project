@@ -9,7 +9,7 @@ from flask_login import current_user, login_user, logout_user, login_required
 
 @app.route('/search/loc/<int:location_id>/', methods=['GET'])
 @app.route('/search/loc/<int:location_id>/page/', methods=['GET'])
-@app.route('/search/loc/<int:location_id>/page/<int:page>', methods=['GET'])
+@app.route('/search/loc/<int:location_id>/page/<int:page>/', methods=['GET'])
 def search(location_id, page=1):
     CARS_PER_PAGE = 10
 
@@ -119,3 +119,13 @@ def registration():
         flash(form[field].label.text + ": " + ", ".join(errors), 'error')
 
     return render_template('user_registration.html', title='Register', form=form)
+
+
+@app.route('/car_details/<int:car_id>/')
+def car_details(car_id):
+    car = Car.query.get(car_id)
+    if car:
+        return render_template('car_details.html', title="Car Details", car=car)
+    else:
+        flash('Car not found', 'error')
+        return redirect(request.referrer or url_for('home'))

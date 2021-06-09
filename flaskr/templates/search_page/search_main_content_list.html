@@ -24,7 +24,9 @@
 
                 <div class="thumbnail card">
                     <div class="img-event">
-                        <img class="group border-image-source img-fluid" src="{{ car.get_photo_path() }}"/>
+                        <a href="{{ url_for('car_details', car_id=car.id) }}">
+                            <img class="group border-image-source img-fluid" src="{{ car.get_photo_path() }}"/>
+                        </a>
                     </div>
                     <div class="caption card-body">
                         <h4 class="group card-title inner list-group-item-heading">
